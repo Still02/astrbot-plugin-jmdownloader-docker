@@ -1,0 +1,52 @@
+{
+  "enabled": {
+    "type": "bool",
+    "default": true,
+    "description": "启用 JM PDF 下载命令"
+  },
+  "allow_group": {
+    "type": "bool",
+    "default": true,
+    "description": "允许在群聊中使用 /jm"
+  },
+  "cookies": {
+    "type": "string",
+    "default": "",
+    "description": "可选：18comic/JMComic Cookie，格式为 k=v; k2=v2"
+  },
+  "proxy": {
+    "type": "string",
+    "default": "",
+    "description": "可选代理，例如 http://127.0.0.1:7890；留空时沿用系统代理"
+  },
+  "timeout": {
+    "type": "int",
+    "default": 20,
+    "description": "单次网络请求超时秒数（5-120）"
+  },
+  "retry_times": {
+    "type": "int",
+    "default": 3,
+    "description": "网络请求重试次数（1-10）"
+  },
+  "image_threads": {
+    "type": "int",
+    "default": 16,
+    "description": "单章节图片下载并发数（1-32）"
+  },
+  "photo_threads": {
+    "type": "int",
+    "default": 4,
+    "description": "章节下载并发数（1-16）"
+  },
+  "max_concurrent": {
+    "type": "int",
+    "default": 1,
+    "description": "同时处理的漫画数量（1-3）"
+  },
+  "dir_rule": {
+    "type": "string",
+    "default": "Bd / JM{Aid}-{Atitle}",
+    "description": "jmcomic 图片下载目录规则"
+  }
+}

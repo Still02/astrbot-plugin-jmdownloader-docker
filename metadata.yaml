@@ -1,0 +1,20 @@
+name: jmdownloader
+display_name: JM PDF 下载器
+short_desc: 使用 /jm 下载并发送 PDF；使用前须配置好 NapCat OneBot 反向 WebSocket。
+desc: |
+  使用 /jm <数字ID> 下载 JMComic 图片、合成有效 PDF，并通过 NapCat 上传为真正的 QQ 群文件或私聊文件。
+
+  使用前请先配置 AstrBot 的 OneBot v11（aiocqhttp）适配器，并在 NapCat 中启用 WebSockets 客户端、连接 AstrBot 的反向 WebSocket 地址（默认 ws://<AstrBot主机>:6199/ws）。请确认 AstrBot 控制台显示适配器已连接，并确保机器人具有群文件上传权限。
+help: 发送 /jm 123456；也支持 /jm JM123456。下载完成后机器人会直接发送 PDF 文件。
+version: 1.0.3
+author: CLRedfield
+repo: https://github.com/CLRedfield/astrbot-plugin-jmdownloader
+social_link: https://github.com/CLRedfield
+astrbot_version: ">=4.27.1,<5"
+support_platforms:
+  - aiocqhttp
+tags:
+  - 漫画
+  - 下载
+  - PDF
+  - QQ
